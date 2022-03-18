@@ -131,6 +131,9 @@ body {
 .page__main-block {
 }
 .page__services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0 0 0;
 }
 /* -------------Подвал------------------------------------------ */
 .footer {
@@ -139,8 +142,6 @@ body {
 /* -------------Main-block------------------------------------------ */
 .main-block {
     position: relative;
-}
-.main-block__container {
 }
 .main-block__body {
     padding: 184px 0px 191px 0px;
@@ -230,18 +231,29 @@ body {
     }
 }
 /* -------------Services------------------------------------------ */
-
-.services {
-}
-._container {
-}
 .services__body {
     display: flex;
-    margin: 0px -15px;
+    flex-wrap: wrap;
+    margin: 15px 0px;
 }
 .services__column {
     padding: 0px 15px;
     flex:0 1 33.333%;
+}
+@media (max-width: 992px) {
+    .services__column {
+        flex: 0 1 50%;
+        margin: 0 0 30px 0;
+    }
+    .services__column:last-child {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 670px) {
+    .services__column {
+        flex: 100%;
+        margin: 0 0 30px 0;
+    }
 }
 .services__item {
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -249,12 +261,13 @@ body {
     padding: 35px;
     height: 100%;
 }
-.item__services {
+@media (max-width: 670px) {
+    .services__item {
+        padding: 20px;
+    }
 }
 .item__services > *:not(:last-child) {
     margin: 0px 0px 10px 0px;
-}
-.item__services__icon {
 }
 .item__services_green {
     background: #0D5C63;
@@ -276,3 +289,4 @@ body {
 .item__services__text_white {
     color:white;
 }
+/* ------------------------------------------------------------------------- */
