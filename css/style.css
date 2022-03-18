@@ -35,6 +35,7 @@ body {
     color: #252B42;
     font-weight: 500;
     font-family: Montserrat;
+    background: #FAFAFA;
 }
 /* ------------------------------------------------------- */
 .wrapper {
@@ -135,9 +136,27 @@ body {
     z-index: 2;
     margin: -111px 0 0 0;
 }
+/* -------------Header-block------------------------------------------ */
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+.header-block__title {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 45px 0 10px 0;
+    line-height: calc(49 / 40 * 100%);
+    color: #252B42;
+}
+.header-block__sub-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20 / 14 * 100%);
+    color:#737373;
+    margin-bottom: 45px;
+}
 /* -------------Подвал------------------------------------------ */
 .footer {
-    
 }
 /* -------------Main-block------------------------------------------ */
 .main-block {
@@ -289,4 +308,53 @@ body {
 .item__services__text_white {
     color:white;
 }
-/* ------------------------------------------------------------------------- */
+/* ------------Adventages------------------------------------------------------------- */
+.page__adventages {
+    padding: 80px 0;
+}
+.adventages {
+}
+.adventages__container {
+}
+._container {
+}
+.adventages__header {
+    margin: 0 0 50px 0;
+}
+.adventages__body {
+    display: flex;
+    margin: 0 -15px;
+}
+.adventages__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+.adventages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    background: #FFFFFF;
+}
+.adventages__item :not(:last-child) {
+    margin-bottom: 10px;
+}
+.adventage__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.adventages__value {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(57 / 40 * 100%);
+    color: #252B42;
+}
+.adventages__text {
+    font-size: 15px;
+    color: #737373;
+    font-weight: 700;
+    line-height: calc(24 / 15 * 100%);
+}
