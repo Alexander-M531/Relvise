@@ -129,8 +129,6 @@ body {
 .page {
     flex: 1 1 auto;
 }
-.page__main-block {
-}
 .page__services {
     position: relative;
     z-index: 2;
@@ -154,9 +152,6 @@ body {
     line-height: calc(20 / 14 * 100%);
     color:#737373;
     margin-bottom: 45px;
-}
-/* -------------Подвал------------------------------------------ */
-.footer {
 }
 /* -------------Main-block------------------------------------------ */
 .main-block {
@@ -322,12 +317,6 @@ body {
         padding: 15px 0;
     }
 }
-.adventages {
-}
-.adventages__container {
-}
-._container {
-}
 .adventages__header {
     margin: 0 0 50px 0;
 }
@@ -384,4 +373,65 @@ body {
     color: #737373;
     font-weight: 700;
     line-height: calc(24 / 15 * 100%);
+}
+/* ----------------------------------------------------------------------------- */
+.page__practice {
+    padding: 125px 0 80px 0;
+}
+.practice__column {
+    margin-bottom:  30px;
+}
+@media (max-width: 1080px) {
+    .practice__body {
+        display: flex;
+        justify-content: center;
+    }
+}
+.practice__header {
+    margin: 0 0 45px 0;
+}
+.practice__body {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.practice__column {
+    padding: 0 10px;
+    flex: 0 1 25%;
+}
+.item-practice {
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+.item-practice__link {
+    color: inherit;
+}
+.item-practice__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+.item-practice__title:hover {
+    color: red;
+}
+.item-practice__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.item-practice__img img {
+    width: 230px;
+    height: 138px;
 }
